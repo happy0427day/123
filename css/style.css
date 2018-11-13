@@ -123,7 +123,36 @@ text-align: center;
     margin-top: 100px;
     text-align: center;
 }
-
-
-
-
+footer {
+    padding: 150px 0;
+    background-color: rgb(41, 40, 40);
+    color: aliceblue;
+}
+footer p {
+    opacity: .6;
+}
+footer a {
+    color: aliceblue;
+    opacity: .6;
+    text-decoration: underline;
+}
+footer a:hover {
+    opacity: 1;
+}
+footer h2 {
+    margin-bottom: 30px;
+}
+footer .comment {
+    margin-bottom: 30px;
+}
+#sns {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+#sns a {
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+}
+#sns .social {
+    text-align: right;
+}
