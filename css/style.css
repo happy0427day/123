@@ -1,0 +1,108 @@
+nav {
+    position: fixed;
+    z-index: 9999;
+}
+
+nav .logo {
+    float:left;
+}
+nav .menu {
+    float: left;
+    margin-left: 30px;
+}
+nav .menu li {
+float: left;
+}
+nav a {
+    display: block;
+    line-height: 70px;
+    margin: 0 15px;
+    color: rgb(214, 127, 127);
+    position: relative;
+    transition: all .5s;
+}
+nav .search {
+    float: right;
+}
+nav .menu a::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    transition: all .3s;
+    transform: scalex(0)
+
+}
+nav .menu a:hover::after{
+    transform: scale(1)
+}
+nav .menu a:hover{
+    color: red;
+}
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0)) ,url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: table;
+    background-attachment: fixed;
+    clip-path: polygon(0 0,100% 0,100% 100%,50% 90%,0 100%,0 0);
+/* clip-path相容性不高 */
+}
+header .fixed-width {
+    display: table-cell;
+    vertical-align: middle;
+}
+header h1 {
+    font-size: 96px;
+    letter-spacing: 10px;
+    color: azure;
+}
+header p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+#service {
+    padding: 150px 0;
+}
+#service h2 {
+    text-align: center;
+}
+#service .icon {
+    width: 75px;
+    height: 75px;
+    background-color: #007daf;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 85px;
+    color: aliceblue;
+}
+#history {
+    background-color: rgb(209, 208, 208);
+    padding: 150px 0;
+    font-size: 0;
+}
+#history .col-md-6 {
+    float: none;
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+#history h2 {
+    margin-bottom: 15px;
+}
+#history h3 {
+    margin-bottom: 15px;
+}
+#history p {
+    margin-bottom: 30px;
+}
+
+
